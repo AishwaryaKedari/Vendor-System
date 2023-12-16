@@ -12,4 +12,4 @@ from vendor.models import Purchase_Orders
 class Purchase_OrdersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Purchase_Orders
-        fields = [' po_number','vendor','order_date','delivery_date','items','quantity','status','quality_rating','issue_date','acknowledgment_date']
+        fields = "__all__"
